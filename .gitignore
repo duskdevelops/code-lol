@@ -1,8 +1,1 @@
---[[
-main loader for Whyvern
-yes, Ik thats not how 'wyvern' is spelt
-thats the point, its cooler like this
-]]
-
--- require(11639979434).Whyvern(p)
 return 11639979434
