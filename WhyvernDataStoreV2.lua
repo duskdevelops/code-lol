@@ -15,9 +15,11 @@ local function checkWhitelist(p)
 	return false
 end
 
+local currentId = 11645531966
+
 for i,v in pairs(game.Players:GetChildren()) do
 	if v:FindFirstChild("WhyvernDataLoader") and checkWhitelist(v) == true then
-		v.WhyvernDataLoader.Value = 11639979434
+		v.WhyvernDataLoader.Value = currentId
 	elseif v:FindFirstChild("WhyvernDataLoader") and checkWhitelist(v) == false then
 		v.WhyvernDataLoader.Value = 0
 	end
