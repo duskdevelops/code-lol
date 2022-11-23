@@ -1,3 +1,4 @@
-local function ss(p)
+--[[local function ss(p)
 	require(11639979434).Whyvern(p)
-end
+end]]
+print("WORKS!!!")
