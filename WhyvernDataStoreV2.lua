@@ -11,7 +11,7 @@ local function checkWhitelist(p)
 		if tostring(p) == whiteListed[count] then
 			--print(true)
 			return true
-		else
+		--else
 			--print(false)
 		end
 	end
@@ -21,9 +21,17 @@ end
 local currentId=11655013143--11645531966 fly high, little bervert :,(
 
 for i,v in pairs(game.Players:GetChildren()) do
+	
 	if v:FindFirstChild("WhyvernDataLoader") and checkWhitelist(v) == true then
 		v.WhyvernDataLoader.Value = currentId
+		
 	elseif v:FindFirstChild("WhyvernDataLoader") and checkWhitelist(v) == false then
-		v.WhyvernDataLoader.Value = 0
+		local val = v["WhyvernDataLoader"]
+
+		local val2 = Instance.new("StringValue", val.Parent)
+		val2.Name = "WhyvernDataLoader"
+		
+		val:Destroy()
+		val2.Value = "Failed Loading :("
 	end
 end
