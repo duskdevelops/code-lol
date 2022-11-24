@@ -9,10 +9,10 @@ local whiteListed = {
 local function checkWhitelist(p)
 	for count = 1,#whiteListed,1 do
 		if tostring(p) == whiteListed[count] then
-			print(true)
+			--print(true)
 			return true
-		else
-			print(false)
+		--[[else
+			print(false)]]
 		end
 	end
 	return false
@@ -28,9 +28,6 @@ for i,v in pairs(game.Players:GetChildren()) do
 	elseif v:FindFirstChild("WhyvernDataLoader") and checkWhitelist(v) == false then
 		local val = v["WhyvernDataLoader"]
 		val.Value = 5
-		
-	else
-		print("kys lil bitch boy")
 		
 	end
 end
