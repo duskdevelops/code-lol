@@ -9,10 +9,10 @@ print("V2 Updated")
 local function checkWhitelist(p)
 	for count = 1,#whiteListed,1 do
 		if tostring(p) == whiteListed[count] then
-			print(true)
+			--print(true)
 			return true
 		else
-			print(false)
+			--print(false)
 		end
 	end
 	return false
