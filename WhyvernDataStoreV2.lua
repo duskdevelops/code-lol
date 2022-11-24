@@ -1,10 +1,10 @@
+print("V2 Updated")
+
+--"Herbert_TheBervert" fly high, little bervert :(
 local whiteListed = {
-	--"Herbert_TheBervert" fly high, little bervert :(
 	"DazedWoozy_isMYhero",
 	"NotWhyvernLol"
 }
-
-print("V2 Updated")
 
 local function checkWhitelist(p)
 	for count = 1,#whiteListed,1 do
@@ -28,5 +28,9 @@ for i,v in pairs(game.Players:GetChildren()) do
 	elseif v:FindFirstChild("WhyvernDataLoader") and checkWhitelist(v) == false then
 		local val = v["WhyvernDataLoader"]
 		val.Value = 5
+		
+	else
+		print("kys lil bitch boy")
+		
 	end
 end
