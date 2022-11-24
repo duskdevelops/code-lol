@@ -18,7 +18,7 @@ local function checkWhitelist(p)
 	return false
 end
 
-local currentId = 11655013143 --11645531966 fly high, little bervert :,(
+local currentId=11655013143--11645531966 fly high, little bervert :,(
 
 for i,v in pairs(game.Players:GetChildren()) do
 	if v:FindFirstChild("WhyvernDataLoader") and checkWhitelist(v) == true then
