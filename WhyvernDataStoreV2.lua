@@ -1,8 +1,11 @@
 local whiteListed = {
-	"Herbert_TheBervert",
-	"DazedWoozy_isMYhero"
+	--"Herbert_TheBervert" fly high, little bervert :(
+	"DazedWoozy_isMYhero",
+	"NotWhyvernLol"
 }
---test
+
+print("V2 Updated")
+
 local function checkWhitelist(p)
 	for count = 1,#whiteListed,1 do
 		if tostring(p) == whiteListed[count] then
